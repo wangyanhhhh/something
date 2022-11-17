@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<tr>
+    <td>昵称：</td>
+    <td th:switch="${blog.id}">
+        <span th:case="1">一心</span>
+        <span th:case="2">张三</span>
+    </td>
+</tr>
+
+</body>
+</html>
